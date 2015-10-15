@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "umu dev helper",
   "version": "1.2",
-  "description": "切换开发版本时的umu语言版本",
+  "description": "切换开发版本时的umu语言版本,源码:https://github.com/daoyuly/umu-dev-helper",
   "background": {
     "scripts": [
     ]

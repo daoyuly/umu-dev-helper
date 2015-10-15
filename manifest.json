@@ -1,0 +1,36 @@
+{
+  "author": "daoyu@umu.com",
+  "manifest_version": 2,
+  "name": "umu dev helper",
+  "version": "1.2",
+  "description": "切换开发版本时的umu语言版本",
+  "background": {
+    "scripts": [
+    ]
+  },
+  "icons": {
+    "16": "images/umu16.png",
+    "48": "images/umu48.png",
+    "128": "images/umu128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.iuv.net/*"
+      ],
+      "exclude_matches": [
+        "http://gitlab.iuv.net/*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "http://*.iuv.net/"
+  ],
+  "web_accessible_resources": [
+    "css/umu-dev-helper.css"
+  ],
+  "homepage_url": "http://daoyuly.github.io/"
+}

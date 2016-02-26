@@ -2898,13 +2898,28 @@ function languageHelper() {
                 '4': 'JP'
             };
             var langMap = {
-                '1': 'ch-tw',
-                '2': 'ch-cn',
+                '1': 'zh-tw',
+                '2': 'zh-cn',
                 '3': 'en-us',
                 '4': 'ja-jp'
             };
             setCookie(systemMap[index], langMap[index]);
-            location.reload();
+            var href = window.location.href;
+            if (href.indexOf('enterprise') >- 1 && (href.indexOf('zh-cn') >- 1
+                || href.indexOf('en-us') >- 1
+                || href.indexOf('ja-jp') >- 1
+                || href.indexOf('zh-tw') >- 1 )) {
+
+                href = href.replace(/(zh-cn)|(zh-tw)|(ja-jp)|(en-us)/,function () {
+                    return langMap[index];
+                })
+
+                window.location.href = href;
+            }
+            else {
+                location.reload();
+            }
+
         });
     }
 

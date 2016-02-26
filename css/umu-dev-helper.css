@@ -1,0 +1,211 @@
+ .lang-setting-btn-container-chrome {
+            width: 200px;
+            height: 50px;
+            z-index:99999; 
+            position:fixed; 
+            bottom:80px; 
+            left:20px;
+
+        }
+
+        .lang-setting-btn-container-chrome button {
+
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            outline: none;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .lang-setting-btn-container-chrome button label {
+            position: absolute;
+            left: 13px;
+            top: 12px;
+            color: #fff;
+            cursor: pointer;
+
+        }
+
+        .lang-setting-btn-container-chrome .btn-tw {
+             background-color: #e3a729;
+        }
+
+        .lang-setting-btn-container-chrome .TW {
+             background-color: #e3a729;
+             border-radius: 50%;
+        }
+
+        .lang-setting-btn-container-chrome .btn-cn {
+             background-color: #df5f3b;
+        }
+
+       .lang-setting-btn-container-chrome .CN {
+             background-color: #df5f3b;
+              border-radius: 50%;
+        }
+
+        .lang-setting-btn-container-chrome .btn-en {
+            background-color: #5e92fc;  
+        }
+
+
+       .lang-setting-btn-container-chrome .EN {
+            background-color: #5e92fc;
+             border-radius: 50%;
+
+               
+        }
+
+        .lang-setting-btn-container-chrome .btn-jp {
+            background-color: #81a41c;
+                
+        }
+
+        .lang-setting-btn-container-chrome .JP {
+            background-color: #81a41c;
+             border-radius: 50%;
+                
+        }
+
+
+
+
+.lang-setting-btn-container-chrome button:hover {
+    box-shadow: 3px 2px 1px #ccc;
+    text-shadow: #000 0 1px 0;
+}
+
+
+
+
+
+        .lang-setting-btn-container-chrome section, section div {
+            /* See it in slo-mo, you can change this */
+            transition-duration: .6s;
+        }
+
+
+        .lang-setting-btn-container-chrome section, .button {
+            transition-timing-function: ease;
+        }
+
+        .lang-setting-btn-container-chrome   section {
+            display: inline-block;
+            position: relative;
+            padding: .375rem .375rem 0;
+            height: 2.5rem;
+            background: #A9ADB6;
+            border-radius: .25rem;
+            perspective: 300;
+            box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0, 0, 0, .2), inset 0 .25rem 1rem rgba(0, 0, 0, .1);
+        }
+
+        .lang-setting-btn-container-chrome .button {
+            opacity: 0;
+        }
+
+        .lang-setting-btn-container-chrome .cover {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform-origin: center bottom;
+            transform-style: preserve-3d;
+            font: 1.25em/2 "icon";
+            color: white;
+            text-align: center;
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        .lang-setting-btn-container-chrome .innie,
+        .lang-setting-btn-container-chrome .outie,
+        .lang-setting-btn-container-chrome .spine,
+        .lang-setting-btn-container-chrome .shadow {
+            position: absolute;
+            width: 100%;
+        }
+
+        .lang-setting-btn-container-chrome .innie,
+        .lang-setting-btn-container-chrome .outie {
+            height: 100%;
+            background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .1) 100%);
+            border-radius: .25rem;
+        }
+
+        .lang-setting-btn-container-chrome  .innie:after,
+        .lang-setting-btn-container-chrome  .outie:after {
+            content: "语言版本设置";
+        }
+
+        .lang-setting-btn-container-chrome  .innie {
+            background-color: #67E2FE;
+            text-shadow: 0 -2px 4px rgba(0, 0, 0, .2);
+        }
+
+        .lang-setting-btn-container-chrome  .spine {
+            top: .25rem;
+            background: #20C7F3;
+            height: .25rem;
+            transform: rotateX(90deg);
+            transform-origin: center top;
+        }
+
+
+        .lang-setting-btn-container-chrome .outie {
+            background-color: #2EC8FA;
+            transform: translateZ(.25rem);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+        }
+
+        .lang-setting-btn-container-chrome section:hover {
+            background: #EBEFF2;
+        }
+
+        .lang-setting-btn-container-chrome  section:hover .button {
+            opacity: 1;
+        }
+
+        .lang-setting-btn-container-chrome section:hover .cover,
+        .lang-setting-btn-container-chrome section:hover .innie,
+        .lang-setting-btn-container-chrome section:hover .spine,
+        .lang-setting-btn-container-chrome section:hover .outie,
+        .lang-setting-btn-container-chrome section:hover .spine {
+            transition-timing-function: cubic-bezier(.2, .7, .1, 1.1);
+        }
+
+        .lang-setting-btn-container-chrome section:hover .cover {
+            transform: rotateX(-120deg);
+        }
+
+        .lang-setting-btn-container-chrome section:hover .innie {
+            background-color: #3ADAFC;
+        }
+
+        .lang-setting-btn-container-chrome section:hover .spine {
+            background-color: #52B1E0;
+        }
+
+        .lang-setting-btn-container-chrome section:hover .outie {
+            background-color: #2174A0;
+            color: rgba(255, 255, 255, 0);
+        }
+
+        .lang-setting-btn-container-chrome section:hover .shadow {
+            opacity: 1;
+            transform: rotateX(45deg) scale(.95);
+        }
+
+        .lang-setting-btn-container-chrome .close {
+            position:absolute;
+        }
+
+        
+
+.chrome-ext-umu-lang-img {
+    background: url(images/logo-header.png);
+}

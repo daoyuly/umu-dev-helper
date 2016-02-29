@@ -3059,7 +3059,7 @@ function translateJp(elm) {
         var word = elm.innerText;
 
         if (!word && (elm.tagName == 'INPUT' || elm.tagName == "TEXTAREA")) {
-            word = $(elm).attr('placeholder');
+            word = Zepto(elm).attr('placeholder');
         }
 
 
